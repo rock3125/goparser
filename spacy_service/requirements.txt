@@ -1,0 +1,6 @@
+spacy
+gunicorn
+gevent
+flask
+flask-cors
+flask-restplus
