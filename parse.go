@@ -32,7 +32,7 @@ func removeSpaces(sentence_list []Sentence) []Sentence {
 	return final_sentence_list
 }
 
-// post a request to the parser server (parsey)
+// post a request to the parser server (spacy)
 func postRequest(url string, text string) ([]Sentence) {
 	req, err := http.NewRequest("POST", url, bytes.NewBufferString(text))
 	req.Header.Set("Content-Type", "text/plain")
